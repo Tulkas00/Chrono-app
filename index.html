@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>chrono</title>
+</head>
+<body>
+    <div class="stopwatch-container">
+        <svg class="stopwatch-circle" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="35" fill="none" stroke="#0310EA" stroke-width="4"/>
+            <circle cx="50" cy="50" r="35" fill="none" stroke="#008BF8" stroke-width="2" stroke-dasharray="301.59" stroke_dashoffset="301.59" id="progress-circle"/>
+        </svg>
+        <div class="stopwatch-display" id="display">00:00:00</div>
+    </div>
+    <div class="controls">
+        <button class="btn" id="reset"> Reset </button>
+        <button class="btn" id="startStop">Start</button>
+    </div>
+    <div class="laps" id="laps"></div>
+    <script src="index.js"></script>  
+</body>
+</html>
